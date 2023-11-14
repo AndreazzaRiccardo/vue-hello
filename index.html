@@ -16,7 +16,8 @@
         <img :src="imgSrc" alt="Duck">
         <label for="your-name">Come ti chiami ?</label>
         <input type="text" id="your-name" v-model="username">
-        <h1 :style="textColor">Ciao {{ username }}</h1>
+        <button @click="addVisible">Salutami</button>
+        <h1 :style="textColor" :class="visibleClass">Ciao {{ username }}</h1>
     </div>
 
 
